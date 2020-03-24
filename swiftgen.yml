@@ -1,0 +1,15 @@
+input_dir: Channels
+output_dir: Channels
+fonts:
+  inputs: Resources/Fonts
+  outputs:
+    templateName: swift4
+    output: Resources/Fonts/Fonts.swift
+xcassets:
+  inputs:
+    - Resources/Assets/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: Resources/Assets/Assets.swift
+excluded:
+- Pods

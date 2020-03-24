@@ -12,6 +12,10 @@
 		CE02DD83242A6ACD001E2E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE02DD82242A6ACD001E2E26 /* Assets.xcassets */; };
 		CE02DD86242A6ACD001E2E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02DD84242A6ACD001E2E26 /* LaunchScreen.storyboard */; };
 		CE02DD91242A6AD0001E2E26 /* ChannelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02DD90242A6AD0001E2E26 /* ChannelsTests.swift */; };
+		CE02DDA2242A701F001E2E26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02DDA0242A701F001E2E26 /* HomeViewController.swift */; };
+		CE02DDA3242A701F001E2E26 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02DDA1242A701F001E2E26 /* HomeViewController.xib */; };
+		CE02DDA7242A7217001E2E26 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02DDA6242A7217001E2E26 /* AppRouter.swift */; };
+		CE02DDA9242A7236001E2E26 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02DDA8242A7236001E2E26 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		CE02DD8C242A6AD0001E2E26 /* ChannelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChannelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02DD90242A6AD0001E2E26 /* ChannelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTests.swift; sourceTree = "<group>"; };
 		CE02DD92242A6AD0001E2E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE02DDA0242A701F001E2E26 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE02DDA1242A701F001E2E26 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE02DDA6242A7217001E2E26 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		CE02DDA8242A7236001E2E26 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +83,12 @@
 		CE02DD78242A6ACC001E2E26 /* Channels */ = {
 			isa = PBXGroup;
 			children = (
+				CE02DDA5242A71FF001E2E26 /* Routing+Management */,
+				CE02DD9F242A6FFE001E2E26 /* Features */,
 				CE02DD9B242A6D22001E2E26 /* App+SceneDelegates */,
-				CE02DD82242A6ACD001E2E26 /* Assets.xcassets */,
+				CE02DD9E242A6E91001E2E26 /* Resources */,
 				CE02DD9C242A6D3E001E2E26 /* UI */,
-				CE02DD87242A6ACD001E2E26 /* Info.plist */,
+				CE02DD9D242A6D8E001E2E26 /* SupportFiles */,
 			);
 			path = Channels;
 			sourceTree = "<group>";
@@ -109,6 +119,64 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		CE02DD9D242A6D8E001E2E26 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DD87242A6ACD001E2E26 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CE02DD9E242A6E91001E2E26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DDAC242A799F001E2E26 /* Fonts */,
+				CE02DDAB242A7974001E2E26 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE02DD9F242A6FFE001E2E26 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DDA4242A7027001E2E26 /* HomeFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CE02DDA4242A7027001E2E26 /* HomeFeature */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DDA0242A701F001E2E26 /* HomeViewController.swift */,
+				CE02DDA1242A701F001E2E26 /* HomeViewController.xib */,
+			);
+			path = HomeFeature;
+			sourceTree = "<group>";
+		};
+		CE02DDA5242A71FF001E2E26 /* Routing+Management */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DDA6242A7217001E2E26 /* AppRouter.swift */,
+				CE02DDA8242A7236001E2E26 /* AppManager.swift */,
+			);
+			path = "Routing+Management";
+			sourceTree = "<group>";
+		};
+		CE02DDAB242A7974001E2E26 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE02DD82242A6ACD001E2E26 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CE02DDAC242A799F001E2E26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +187,7 @@
 				CE02DD72242A6ACC001E2E26 /* Sources */,
 				CE02DD73242A6ACC001E2E26 /* Frameworks */,
 				CE02DD74242A6ACC001E2E26 /* Resources */,
+				CE02DDAA242A75D2001E2E26 /* Swiftgen Script */,
 			);
 			buildRules = (
 			);
@@ -192,6 +261,7 @@
 			files = (
 				CE02DD86242A6ACD001E2E26 /* LaunchScreen.storyboard in Resources */,
 				CE02DD83242A6ACD001E2E26 /* Assets.xcassets in Resources */,
+				CE02DDA3242A701F001E2E26 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,13 +274,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE02DDAA242A75D2001E2E26 /* Swiftgen Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftgen Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE02DD72242A6ACC001E2E26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE02DDA7242A7217001E2E26 /* AppRouter.swift in Sources */,
+				CE02DDA9242A7236001E2E26 /* AppManager.swift in Sources */,
 				CE02DD7A242A6ACC001E2E26 /* AppDelegate.swift in Sources */,
 				CE02DD7C242A6ACC001E2E26 /* SceneDelegate.swift in Sources */,
+				CE02DDA2242A701F001E2E26 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Channels/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -348,6 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Channels/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -364,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
-				INFOPLIST_FILE = Channels/Info.plist;
+				INFOPLIST_FILE = Channels/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C86JD592M;
-				INFOPLIST_FILE = Channels/Info.plist;
+				INFOPLIST_FILE = Channels/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
