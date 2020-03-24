@@ -8,7 +8,17 @@
 
 import Foundation
 import UIKit
+
 class AppManager {
     static var shared = AppManager()
     private init() {}
+    
+    static func prepareAppWith(window: UIWindow?) {
+        window?.rootViewController = getInitialScene()
+        window?.makeKeyAndVisible()
+    }
+    
+    func getInitialScene() -> UIViewController {
+                return HomeViewController()
+    }
 }
