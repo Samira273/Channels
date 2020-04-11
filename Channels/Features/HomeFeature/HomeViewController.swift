@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let buttonTitle = NSLocalizedString("bear", comment: "The name of the animal")
+        print(buttonTitle)
         // Do any additional setup after loading the view.
     }
 

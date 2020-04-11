@@ -14,7 +14,7 @@ class AppManager {
     private init() {}
     
     static func prepareAppWith(window: UIWindow?) {
-        window?.rootViewController = getInitialScene()
+//        window?.rootViewController = getInitialScene()
         window?.makeKeyAndVisible()
     }
     
