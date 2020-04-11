@@ -188,6 +188,7 @@
 				CE02DD73242A6ACC001E2E26 /* Frameworks */,
 				CE02DD74242A6ACC001E2E26 /* Resources */,
 				CE02DDAA242A75D2001E2E26 /* Swiftgen Script */,
+				CE07E2412441B972002B7989 /* Swiftlint Script */,
 			);
 			buildRules = (
 			);
@@ -292,6 +293,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftgen\n";
+		};
+		CE07E2412441B972002B7989 /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
