@@ -10,11 +10,9 @@ import Foundation
 import UIKit
 
 class AppRouter {
-    // Mark: - variables.
+    // MARK: - variables.
     static var shared = AppRouter()
     private var navController: UINavigationController!
     private var rootViewController: UIViewController!
-    
     private init() {}
-    
 }
